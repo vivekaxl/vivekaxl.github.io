@@ -1,31 +1,113 @@
----
-layout: layout
-title: "Vivek Nair"
----
-{% for post in site.posts offset: 0 limit: 50 %}
-<div class="row">
-  <div class="span7">    
-    <div class="row">
-      <div class="span2">
-        <a href="{{ post.url }}" >
-            <img border="0" width="250" height="150" src="/img/posts/{{ post.image }}" alt="">
-        </a>
-      </div>
-      <div class="span5">
-		<h4><strong><a href="{{ post.url }}">{{ post.title }}</a></strong></h4>      
-        <p>
-          {{ post.summary }}
-        </p>
-		<p>
-          <i class="icon-calendar"></i> {{ post.date | date: "%B %e, %Y" }}
-          | <i class="icon-comment"></i> <a href="http://vivekaxl.github.io{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}"></a>     
-		  | <i class="icon-tags"></i> Tags :{% for tag in post.tags %} <a href="/tags/{{ tag }}" rel="tooltip" title="View posts tagged with &quot;{{ tag }}&quot;"><span class="label label-info">{{ tag }}</span></a>  {% if forloop.last != true %} {% endif %} {% endfor %}		            
-        </p>
-        <p><a href="{{ post.url }}">Read more</a></p>
-      </div>
-    </div>    
-	<hr>
-  </div>
-</div>
-{% endfor %}	
-			
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Edward Gan by edgan8</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pygment_trac.css">
+    <script src="js/scale.fix.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41553675-1', 'edgan8.github.io');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+    </script>
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Edward Gan</h1>
+        <p class="header">PhD Student @ Stanford</p>
+        <p>edgan8@gmail.com, egan1@stanford.edu</p>
+
+      </header>
+      <section>
+
+<h3>About</h3>
+<p>I'm currently a PhD student in computer science at Stanford.
+  Previously a software engineer at Facebook working in Data & Targeting
+  and before that a research assistant in Greg Morrisett's group working on
+  program verification and type system design.
+  My <a href="assets/gan-web-resume.pdf">Resume</a>.</p>
+
+<h3>Projects</h3>
+  <h4>Dataswarm</h4>
+  <p>
+  At Facebook, I worked on the execution engine for
+  running
+  <a href="https://www.youtube.com/watch?v=M0VCbhfQ3HQ">
+  Dataswarm
+  </a>
+  ETL pipelines over historical data, optimized for
+  batch updates and exploratory analysis.
+  </p>
+
+  <h4>Clamp</h4>
+  <p>
+
+  My <a href="assets/gan-thesis-final-print.pdf">senior thesis</a>
+  involved designing a functional programming language to better manage
+  stateful resources by integrating Type Classes with Substructural
+  Types. There's prototype <a
+    href="https://github.com/edgan8/clampcheck">type checker</a> for
+  the language in Haskell and a
+  <a href="http://arxiv.org/abs/1502.04772">paper</a>
+  from LINEARITY 2014.
+
+  </p>
+
+  <h4>NoteSpace</h4>
+  <p>
+
+  At Microsoft, I worked on a
+  the sticky-notes app designed to take advantage of huge navigable layouts.
+  This was supposed to show off Windows 8's API and we made a silly
+  <a href="http://youtu.be/-hxFcDk3ITk">demo</a>.
+
+  Also seen on <a
+    href="http://www.engadget.com/2011/09/16/windows-8-on-a-laptop-in-depth-preview-video/">
+    engadget</a>
+   though it looks like they could have used a manual.
+
+<h3>Random</h3>
+  <h4>Item choices in League:</h4>
+  <p>
+  A naive stab at trying to quantify the importance of different choices
+  players make in purchasing items in league of legends.
+  <a href="http://cs229.stanford.edu/proj2015/251_report.pdf"> Report</a> and
+  <a href="https://github.com/edgan8/lolmerchantml"> github</a> for crawler
+    and analysis.
+
+  <h4>Lossy Grammar Compression:</h4>
+  <p>
+  A long-shot project on trying to introduce lossiness into the
+  <a href="http://en.wikipedia.org/wiki/Sequitur_algorithm">
+    Sequitur Algorithm
+  </a> to get even larger compression ratios.
+  <a href="assets/grmr-paper.pdf">Writeup</a>
+  and <a href="https://github.com/mxw/grmr">code</a>
+  </p>
+
+    </section>
+    <footer>
+    <p><small>Hosted on
+      <a href="https://pages.github.com">GitHub Pages</a>
+      using the Dinky theme</small></p>
+    </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
+  </body>
+</html>
