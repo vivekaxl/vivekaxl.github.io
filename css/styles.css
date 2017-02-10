@@ -404,6 +404,18 @@ footer {
 
 }
 
+.social {
+    float: left;
+    min-height: 100%;
+    background: url(../images/blue-mocha-grunge.jpg) #192029;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 350px;
+}
+
 @media print {
   body {
     padding:0.4in;
