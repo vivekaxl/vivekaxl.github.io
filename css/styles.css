@@ -109,7 +109,7 @@ strong {
 
 ul li {
   list-style: inside;
-  padding-left: 25px;
+  font-size: 15px
 }
 
 ol li {
