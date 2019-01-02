@@ -28,8 +28,8 @@ time, mark, audio, video {
 body {
   font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
-	color: #232323;
-	background-color: #FBFAF7;
+	color: #efefef;
+        background-color: #020202;
 	margin: 0;
 	line-height: 1.8em;
 	-webkit-font-smoothing: antialiased;
@@ -37,9 +37,10 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#232323;
+  color:#f5e3e3;
   margin:36px 0 10px;
-  font-size: 16px
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 p, ul, ol, table, dl {
@@ -87,7 +88,7 @@ h4 {
 
 a {
   color:#C30000;
-  font-weight:200;
+  font-weight:500;
   text-decoration:none;
 }
 
