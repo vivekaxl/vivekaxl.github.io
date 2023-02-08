@@ -1,234 +1,105 @@
 <!DOCTYPE html>
 <html>
-<title>Vivek Nair</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre Baskerville">
-<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-<style>
-#navbar {
-  overflow: hidden;
-  background-color: #4c7186;
-  padding: 10px 10px; /* Large padding which will shrink on scroll (using JS) */
-  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
-  position: fixed; /* Sticky/fixed navbar */
-  width: 99%;
-  top: 0; /* At the top */
-  z-index: 99; 
-}
-img {
-    position: relative;
-    top: 12px;
-    vertical-align: middle;
-}
-.center {
-  display: block;
-  margin-left: 60px;
-  width: 60%;
-}
-div {
-  resize: both;
-  overflow: auto;
-}
-#allover{
-  resize: both;
-  overflow: auto;
-  width: 200px;
-  padding: 25px;
-  border: 25px solid navy;
-}
-#navbar-right {
-  float: right;
-}
-body,h2,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-#logo{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.3em;
-  border-bottom: none;
-}
-h1{
-  font-family: 'Libre Baskerville', sans-serif;
-  font-size: 35px;
-  font-weight: 700;
-  line-height: 2em;
-  border-bottom: none;
-  color:#FFE792;
-}
-h3 {
-  color:#ffffff;
-  font-size: 24px;
-  font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
-}
-h4 {
-  color:#fdd752;
-  font-family: 'Libre Baskerville', sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-}
-a {
-  font-weight:500;
-  text-decoration:none;
-  font-size: 17px;
-}
-p, ul, ol, table, dl {
-  font-size: 17px;
-  font-family: "Montserrat";
-  color: #ffffff;
-  text-align: justify;
-}
-.content {
-  max-width: 900px;
-  margin: auto;
-  background-color: #4c7186;
-}
-.w3-black, .w3-hover-black:hover {
-    color: #fff!important;
-    background-color: #4b4b4b;
-}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 213px;background: #4c7186;float:left;height:auto;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {float:right;background: #4b4b4b;}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
-<body class="w3-black">
-<div class="content">
+  <head>
+    <title>My Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <style>
+      @media (max-width: 767px) {
+  h1 {
+    font-size: 2em;
+  }
 
-    <!-- Page Content -->
-    <div class="w3-padding-large" id="main">
+  .box {
+    padding: 1em;
+  }
 
-     <div style="background-color: #4b4b4b;border-style: solid;border-width: 5px;border-color: #4b4b4b;border-top-width: 0px;border-bottom-width: 0px;">
-      <a href="http://vivekaxl.com" style="color: #fda9a9; font-size: 26px">Vivek  Nair</a>
-            <div id="navbar-right" id="blah">
-          <a href="mailto:vivekaxl@gmail.com"  title="Email" target="_blank" style="color: #fda9a9;font-size: 22px;"><i class="fas fa-envelope"></i>
-          <a href="http://vivekaxl.github.io/assets/VivekNair-Resume.pdf"  title="Resume" target="_blank" style="color: #fda9a9;font-size: 22px;"><i class="fas fa-file"></i></a>
-          <a href="https://www.linkedin.com/in/vivekaxl" target="_blank" style="color: #fda9a9;font-size: 23px;"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/vivekaxl" target="_blank" style="color: #fda9a9;font-size: 23px;"><i class="fab fa-github"></i></a>
-          <a href="https://twitter.com/vivekaxl" target="_blank" style="color: #fda9a9;font-size: 23px;"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.quora.com/profile/Vivek-Nair-18" target="_blank" style="color: #fda9a9;font-size: 23px;"><i class="fab fa-quora"></i></a>
-          <a href="https://scholar.google.com/citations?user=C21LS6QAAAAJ&amp;hl=en" target="_blank" style="color: #fda9a9;font-size: 7.4px;"><i class="ai ai-google-scholar-square ai-3x"></i></a>
-          <a href="https://www.facebook.com/vivek.nair.5895834" target="_blank" style="color: #fda9a9;font-size: 23px;"><i class="fab fa-facebook"></i></a>
-          
+  .fa-icon {
+    font-size: 1.5em;
+    margin-right: 0.5em;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  li {
+    flex: 1;
+    text-align: center;
+    margin: 0.5em;
+  }
+
+  footer {
+    font-size: 0.75em;
+  }
+}
+      body {
+        background-color: #333;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: 'Montserrat', sans-serif;
+      }
+      h1 {
+        color: white;
+        text-align: center;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        margin: 0 10px;
+      }
+      .fa-icon {
+        font-size: 36px;
+        color: white;
+      }
+      a:hover .fa-icon {
+        color: lightgray;
+      }
+      .box {
+        background-color: black;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px white;
+        text-align: center;
+      }
+      .footer {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="box">
+        <h1>Vivek Nair</h1>
+        <ul>
+  <li><a href="mailto:vivekaxl@gmail.com" target="_blank"><i class="fas fa-envelope fa-icon"></i></a></li>
+  <li><a href="http://vivekaxl.github.io/assets/VivekNair-Resume.pdf" target="_blank"><i class="fas fa-file fa-icon"></i></a></li>
+  <li><a href="https://www.linkedin.com/in/vivekaxl" target="_blank"><i class="fab fa-linkedin fa-icon"></i></a></li>
+  <li><a href="https://www.twitter.com/vivekaxl" target="_blank"><i class="fab fa-twitter-square fa-icon"></i></a></li>
+  <li><a href="https://github.com/vivekaxl" target="_blank"><i class="fab fa-github-square fa-icon"></i></a></li>
+  <li><a href="https://www.quora.com/profile/Vivek-Nair-18" target="_blank"><i class="fab fa-quora fa-icon"></i></a></li>
+  <li><a href="https://scholar.google.com/citations?user=C21LS6QAAAAJ&amp;hl=en" target="_blank"><i class="ai ai-google-scholar-square fa-icon"></i></a></li>
+  <li><a href="https://www.facebook.com/vivek.nair.5895834" target="_blank"><i class="fab fa-facebook-square fa-icon"></i></a></li>
+  <li><a href="https://open.spotify.com/user/12124131616?si=8O4wZcB8S6Gjx7_NHoCBhA" target="_blank"><i class="fab fa-spotify fa-icon"></i></a></li>
+</ul>
+
       </div>
     </div>
-    <p> </p>
-    <div style="background-color: #333333;border-style: solid;border-width: 5px;border-color: #333333;border-top-width: 0px;border-bottom-width: 0px;">
-      <h3>About</h3>
-    </div>
-    
-        
-    <p>I am a Research Scientist at Facebook in Seattle. I received my Ph.D. in Computer Science from North Carolina 
-        State University in 2018, where 
-      <a href="http://menzies.us" target="_blank" >Dr. Tim Menzies</a> was my advisor.
-      I was previously a Reseach Intern at Microsoft Research, and Lexisnexis Risk Solutions.
-      Before that a Software Engineer at Samsung Research Institute - Noida working in Memory & File System.
-      </p>
-    
-    <div style="background-color: #333333;border-style: solid;border-width: 5px;border-color: #333333;border-top-width: 0px;border-bottom-width: 0px;">
-      <h3>Projects</h3>
-    </div>
-    
-      <p>
-      <b style="color:#fdd752">Performance Prediction of Configurable System: </b> As a part of my Ph.D., I explored ways to easily optimize non-functional properties (e.g. runtime, latency etc.)
-      of highly configurable systems. Techniques like spectral learning and rank based learning is used to learn features of the configurations. 
-      <ul> 
-        <li> R. Krishna, Vivek Nair, P. Jamshidi, T. Menzies. <a href="https://arxiv.org/abs/1911.01817" target="_blank"  style="font-size:15px;">Whence to Learn? Transferring Knowledge in Configurable Systems using BEETLE.</a> TSE 2020</li>
-        <li> Vivek Nair, Z. Yu, T. Menzies, N. Seigmund, S. Apel. <a href="https://arxiv.org/abs/1705.05018" target="_blank"  style="font-size:15px;">Finding Faster Configurations using FLASH.</a> TSE 2018. </li>
-        <li> Vivek Nair, T. Menzies, N. Seigmund, S. Apel. <a href="https://arxiv.org/pdf/1702.05701.pdf" target="_blank"  style="font-size:15px;">Using Bad Learners to find Good Configurationsi</a> FSE 2017. </li>
-        <li> Vivek Nair, T. Menzies, N. Seigmund, S. Apel. <a href="https://arxiv.org/abs/1701.08106" target="_blank" style="font-size:15px;">Faster  Discovery  of  Faster  System  Configurations  with  Spectral Learning</a> ASE 2017. </li>
-      </ul
-      </p>
-
-      <p>
-      <b style="color:#fdd752">Finding Best Cloud Configuration for a given Software System: </b> This is a joint project with my colleague, <a href="http://kmweb.info/" target="_blank" >Chin-Jung Hsu</a>. We wanted to develop
-      fast searching techniques, which are efficient, effective and robust, to find the best configuration in the cloud. 
-      The methods proposed uses low-level performance metrics to predict resource requirements which can be then used to 
-      eliminate 'less promising' configurations and hence searches only the spotlight region of the configuration space.
-        
-        <ul>
-          
-          <li> C.J. Hsu, Vivek Nair, T. Menzies, and V. W. Freeh. <a href="https://tiny.cc/vivek_2018d" target="_blank"  style="font-size:15px;">Scout: An Experienced Guide to Find the Best Cloud Configuration.</a> (Submitted 2019).</li>
-          <li> C.J. Hsu, Vivek Nair, V. W. Freeh, T. Menzies. <a href="http://tiny.cc/vivek_2018a" target="_blank"  style="font-size:15px;">Low-Level Augmented Bayesian Optimization for Finding theBest Cloud VM.</a> ICDCS 2018.</li>
-          <li> C.J. Hsu*, Vivek Nair*, V. W. Freeh, T. Menzies. <a href="https://tiny.cc/vivek_2018e" target="_blank"  style="font-size:15px;"> Micky:  A  Cheaper  Alternative  for  Selecting  Cloud  Instances.</a> IEEE CLOUD 2018.</li>
-        </ul>
-      </p>  
-      
-      <p>
-      <b style="color:#fdd752">SWAY - Sampling Way: </b> This is a joint project with my colleague, <a href="http://ginfung.github.io/" target="_blank" >Jianfeng Chen</a>. We wanted to develop
-      fast searching techniques, which can be used to optimize problems rather quickly. We have tried the searchers on various 
-      problems. This has resulted in few publications. 
-      <ul>  
-        <li> Vivek Nair, T. Menzies,J. Chen. <a href="http://link.springer.com/chapter/10.1007/978-3-319-47106-8_7" target="_blank"  style="font-size:15px;">An (Accidental) Exploration of Alternatives to Evolutionary Algorithms for SBSE</a> SSBSE 2016.</li>
-        <li> J. Chen, Vivek Nair, T. Menzies. <a href="https://arxiv.org/abs/1608.07617" style="font-size:15px;" target="_blank" >Beyond Evolutionary Algorithms for Search-based Software Engineering</a>, IST 2017. </li>
-        <li> J. Chen, Vivek Nair, Rahul Krishna, T. Menzies. <a href="https://arxiv.org/pdf/1701.07950.pdf" target="_blank"  style="font-size:15px;">" Sampling" as a Baseline Optimizer for Search-based Software Engineering</a>. TSE 2018. </li>
-      </ul>  
-     <b style="color:#fdd752; font-size:17px">Miscellaneous: </b>
-     <ul>
-       <li>W. Fu, Vivek Nair, T. Menzies. <a href="https://arxiv.org/pdf/1609.02613" target="_blank"  style="font-size:15px;">Why is Differential Evolution Better than Grid Search for Tuning Defect Predictors?</a> (Submitted 2018)</li>
-       <li>Vivek Nair, A. Agrawal, J. Chen, W. Fu, G. Mathew, T. Menzies, L. Minku, M. Wagner, Z. Yu. <a href="https://arxiv.org/pdf/1801.10241" target="_blank"  style="font-size:15px;">Data-Driven Search-based Software Engineering.</a> MSR 2018</li>
-       <li>Huy Tu, Vivek Nair. <a href="https://arxiv.org/pdf/1807.11112.pdf" target="_blank"  style="font-size:15px;">Is One Hyperparameter Optimizer Enough?</a>. SWAN 2018 </li>
-     </ul>
-            
-    
-    <div style="background-color: #333333;border-style: solid;border-width: 5px;border-color: #333333;border-top-width: 0px;border-bottom-width: 0px;">
-      <h3>Open Source Contributions</h3>
-    </div>
-      <p>
-        <b style="color:#fdd752">HPCC Spark Integrator: </b> At LexisNexis, I worked on the developing a python package, which can be used to import (sampled) data stored in
-        <a href="https://hpccsystems.com/"  target="_blank" >HPCC</a>  cluster to a local machine. This was achieved using the web services exposed 
-        by the HPCC platform. The prototype is available <a href="https://pypi.python.org/pypi/hpcc-i-spark" target="_blank">here</a>.
-      </p>
-
-      <p>
-
-        <b style="color:#fdd752">HPCC - Data Science Portal - Machine Learning Plugins: </b> During Summer'16, I worked on developing machine learning plugins for Data Science Portal (DSP). DSP is a 
-        graphical toolkit, which runs HPCC under the hood. It relieves the users to learn or optimize ECL code and provides 
-        a graphical interface to generate machine learning pipelines. The code required to adapt the code to DSP required 
-        careful porting of the existing ML library. The pull request
-        is available <a href="https://github.com/hpcc-systems/ecl-ml/pull/255" target="_blank" >here</a>. The work was presented at the HPCC summit as a part of the <a href=http://www.slideshare.net/hpccsystems/hpcc-systems-community-day-research-poster-contest-winners>
-        HPCC poster competition</a>. The copy of the poster is available <a href="assets/vivek-hpcc-poster.pdf"  target="_blank" >here</a>.
-
-      </p>
-      
-      <p>
-
-        <b style="color:#fdd752">HPCC - Testing Suite: </b> Since, HPCC ML suite was in its nascent stage, I had an opportunity to develop the testing suite for the ML suite. It was
-        particularly a very interesting because I got to learn how to use the macros and functionmacros, 
-        which are indeed very powerful. The pull request can be found <a href="https://github.com/hpcc-systems/ecl-ml/pull/258" target="_blank" >here</a>.
-        
-      </p>
-
-    <div style="background-color: #333333;border-style: solid;border-width: 5px;border-color: #333333;border-top-width: 0px;border-bottom-width: 0px;">
-      <h3>Random</h3>
-    </div>
-    
-      <h4>Talks</h4>
-      <ul>
-      <li><a href="assets/vivek-final-defense-ppt.pdf" target="_blank" >Frugal Ways of Finding “Good” Configurations (Final Exam)</a></li>
-      <li><a href="assets/Frugal.pdf" target="_blank" >Frugal: Cheaper Methods for SBSE (Qualifier Exam)</a></li>
-      <li><a href="assets/AdvancedAnalytics.pdf" target="_blank" >Tutorial in Advanced Analytics (SWAN-2017)</a></li>
-      <li><a href="assets/UsingBadLearnerstofindGoodConfiguration.pdf" target="_blank" >Using Bad Learners to find Good Configuration (FSE-2017)</a></li>
-    </ul>
-          
-
-
-      <h4>Storm</h4>
-      <p>
-      A naive stab at extending a framework, JMOO - originally developed by <a href=https://www.linkedin.com/in/joseph-krall target="_blank" > Joe Krall </a>. 
-        The newer and extended version is called <a href="https://github.com/ai-se/storm" target="_blank" >Storm</a>. The newer version has 
-        new algorithms like <a href="https://github.com/ai-se/storm/tree/master/Algorithms/MOEA_D" target="_blank" >MOEA/D</a>, 
-        <a href="https://github.com/ai-se/storm/tree/master/Algorithms/NSGAIII" target="_blank" >NSGA-III</a> along with various other performance measures.
-
-    </div>
-  </div>
-
-</body>
+    <p class="footer">This website was created by ChatGPT on February 8, 2023.</p>
+  </body>
 </html>
