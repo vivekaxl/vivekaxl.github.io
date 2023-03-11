@@ -81,23 +81,76 @@
         transform: translateX(-50%);
         font-size: 6px;
       }
+      #who-am-i-link {
+			position: absolute;
+			top: 15px;
+    		right: 20px;
+			z-index: 9999;
+			color: #ffffff;
+		}
+	#who-am-i-textbox {
+			display: none;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 550px;
+			height: auto;
+			background-color: black;
+			color: white;
+			padding: 11px;
+			text-align: center;
+			box-shadow: 0 0 14px #f08b8b;
+			z-index: 9998;
+			font-family: Montserrat, sans-serif;
+
+		}
+	#who-am-i-textbox p {
+			text-align: justify;
+		}
+	#who-am-i-textbox a {
+			color: #d44d4d;
+			text-decoration: none;
+		}
     </style>
   </head>
   <body>
+    <a href="#" id="who-am-i-link" style="text-decoration: none";>about</a>
+    <div id="who-am-i-textbox">
+	    <p>I am a software engineer at Meta. I build tools that accelerate Meta's journey towards building privacy aware Ads stack.</p> 
+
+	    <p> I received my Ph.D. in Computer Science from North Carolina State University in 2018, where <a href="http://https://timm.github.io/" target="_blank" >Dr. Tim Menzies</a> was my advisor. I was previously a Reseach Intern at Microsoft Research, and Lexisnexis Risk Solutions. Before that a Software Engineer at Samsung Research Institute - Noida working in Memory & File System.</p>
+	  </div>
+
+	<script>
+		var link = document.getElementById("who-am-i-link");
+		var textBox = document.getElementById("who-am-i-textbox");
+
+		link.addEventListener("click", (event) => {
+			event.preventDefault();
+			textBox.style.display = "block";
+		});
+
+		document.addEventListener("click", (event) => {
+			if (event.target !== link && event.target !== textBox) {
+				textBox.style.display = "none";
+			}
+		});
+	</script>
     <div>
       <div class="box">
         <ul>
-  <li><a href="mailto:vivekaxl@gmail.com" target="_blank"><i class="fas fa-envelope fa-icon"></i></a></li>
-  <li><a href="http://vivekaxl.github.io/assets/VivekNair-Resume.pdf" target="_blank"><i class="fas fa-file fa-icon"></i></a></li>
-  <li><a href="https://www.linkedin.com/in/vivekaxl" target="_blank"><i class="fab fa-linkedin fa-icon"></i></a></li>
-  <li><a href="https://www.twitter.com/vivekaxl" target="_blank"><i class="fab fa-twitter-square fa-icon"></i></a></li>
-  <li><a href="https://github.com/vivekaxl" target="_blank"><i class="fab fa-github-square fa-icon"></i></a></li>
-  <li><a href="https://www.instagram.com/vivekaxl/" target="_blank"><i class="fab fa-instagram fa-icon"></i></a></li>
-  <li><a href="https://scholar.google.com/citations?user=C21LS6QAAAAJ&amp;hl=en" target="_blank" style="color: #ffffff;font-size: 12px"><i class="ai ai-google-scholar-square ai-3x"></i></a></li>
-  <li><a href="https://www.facebook.com/vivek.nair.5895834" target="_blank"><i class="fab fa-facebook-square fa-icon"></i></a></li>
-  <li><a href="https://open.spotify.com/user/12124131616?si=8O4wZcB8S6Gjx7_NHoCBhA" target="_blank"><i class="fab fa-spotify fa-icon"></i></a></li>
-  <li><a href="https://www.quora.com/profile/Vivek-Nair-18" target="_blank"><i class="fab fa-quora fa-icon"></i></a></li>
-</ul>
+          <li><a href="mailto:vivekaxl@gmail.com" target="_blank"><i class="fas fa-envelope fa-icon"></i></a></li>
+          <li><a href="http://vivekaxl.github.io/assets/VivekNair-Resume.pdf" target="_blank"><i class="fas fa-file fa-icon"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/vivekaxl" target="_blank"><i class="fab fa-linkedin fa-icon"></i></a></li>
+          <li><a href="https://www.twitter.com/vivekaxl" target="_blank"><i class="fab fa-twitter-square fa-icon"></i></a></li>
+          <li><a href="https://github.com/vivekaxl" target="_blank"><i class="fab fa-github-square fa-icon"></i></a></li>
+          <li><a href="https://www.instagram.com/vivekaxl/" target="_blank"><i class="fab fa-instagram fa-icon"></i></a></li>
+          <li><a href="https://scholar.google.com/citations?user=C21LS6QAAAAJ&amp;hl=en" target="_blank" style="color: #ffffff;font-size: 12px"><i class="ai ai-google-scholar-square ai-3x"></i></a></li>
+          <li><a href="https://www.facebook.com/vivek.nair.5895834" target="_blank"><i class="fab fa-facebook-square fa-icon"></i></a></li>
+          <li><a href="https://open.spotify.com/user/12124131616?si=8O4wZcB8S6Gjx7_NHoCBhA" target="_blank"><i class="fab fa-spotify fa-icon"></i></a></li>
+          <li><a href="https://www.quora.com/profile/Vivek-Nair-18" target="_blank"><i class="fab fa-quora fa-icon"></i></a></li>
+        </ul>
 
       </div>
     </div>
